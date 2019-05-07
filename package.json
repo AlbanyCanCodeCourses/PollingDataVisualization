@@ -4,8 +4,12 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+<<<<<<< HEAD
     "d3": "^5.9.2",
     "d3-request": "^1.0.6",
+=======
+    "materialize-css": "^1.0.0-rc.2",
+>>>>>>> 47ea226e8bea0d0b3af158ce0f2609f24f2bc59b
     "react": "^16.8.6",
     "react-d3-components": "^0.9.1",
     "react-dom": "^16.8.6",
