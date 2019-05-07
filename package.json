@@ -5,8 +5,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "d3": "^5.9.2",
-    "materialize-css": "^1.0.0",
+    "materialize-css": "^1.0.0-rc.2",
     "react": "^16.8.6",
+    "react-d3-components": "^0.9.1",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.2",
     "react-router-dom": "^5.0.0",
