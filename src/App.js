@@ -1,4 +1,5 @@
 import React from 'react';
+import SideBar from './SideBar'
 import {BarChart, ScatterPlot, LineChart} from 'react-d3-components'
 import data from './assets/MOCK_DATA_150.json'
 import './App.css';
@@ -69,6 +70,7 @@ function App() {
   console.log(dX)
   return (
     <div >
+      <SideBar/>
       <BarChart 
         data={dZ} 
         width={800}
