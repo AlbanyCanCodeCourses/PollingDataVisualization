@@ -1,0 +1,23 @@
+nav {
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center;
+}
+
+
+span {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+#menu {
+    color: white;
+    background-color: gray;
+    font-size: 2em;
+    padding: 10px 20px;
+    margin: 0 20px 0 0;
+    margin-left: auto;
+}
