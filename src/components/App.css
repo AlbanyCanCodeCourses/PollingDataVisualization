@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+/* .dot {
+  fill: #F99
+}
+ */
+ .sp {
+  fill: #61dafb;
+  fill-opacity: 0.225;
+}
+
+.App-link {
+  color: #61dafb;
+}

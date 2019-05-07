@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "d3": "^5.9.2",
+    "d3-request": "^1.0.6",
     "react": "^16.8.6",
     "react-d3-components": "^0.9.1",
     "react-dom": "^16.8.6",
