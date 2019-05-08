@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
-import { BrowserRouter, Route } from "react-router-dom";
 import "materialize-css/dist/css/materialize.min.css";
 
 class Sidebar extends Component {
