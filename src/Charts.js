@@ -6,9 +6,11 @@ import './App.css';
 /**
  * This file is temporary - basically a template for react-d3-components usage - Nikita
  * UPDATE: This file is now a placeholder - Nikita
+ * UPDATE: This file will render the generated charts - Nikita
  */
 
 const Charts = (props) => {
+  console.log(props)
     let d9 = data.map(s => {
         return {
           x: parseFloat(s.current_salary.slice(1)),
