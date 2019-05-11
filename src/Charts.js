@@ -5,6 +5,7 @@ import './App.css';
 
 /**
  * This file is temporary - basically a template for react-d3-components usage - Nikita
+ * UPDATE: This file is now a placeholder - Nikita
  */
 
 const Charts = (props) => {
@@ -17,8 +18,6 @@ const Charts = (props) => {
       let dF = d9
     
       dF.sort((a,b)=> a.x - b.x)
-    
-      console.log("dF",dF)
     
       let dP = {
         label: 'somethingC',
@@ -35,8 +34,6 @@ const Charts = (props) => {
       let dG = d0
     
       dG.sort((a,b) => a.x - b.x)
-    
-      console.log("dG",dG)
     
       let dY = [].concat(...(data.map(s => {
         return [
@@ -60,8 +57,7 @@ const Charts = (props) => {
         label: 'somethingA',
         values: [...dY]
       }
-    
-      console.log(dX)
+
       return (
         <div >
           <BarChart 

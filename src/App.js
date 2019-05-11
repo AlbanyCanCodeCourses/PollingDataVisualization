@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBar from './SideBar'
+//import SideBar from './SideBar'
 import Charts from './Charts'
 import Blank from './Blank'
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom'
@@ -12,7 +12,7 @@ import './App.css';
 const App = (props) => {
     return (
       <BrowserRouter>
-        <SideBar/>
+  
         <Switch>
           <Redirect exact from="/" to="/datavisualization" component={Blank}/>
           <Route path="/datavisualization" component={Blank}/>
