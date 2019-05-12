@@ -7,9 +7,7 @@ import data from '../../assets/data.js';
 class Barchart extends Component {
 
     plot(chart, width, height) {
-        // create scales!
         const xScale = d3.scaleBand()
-
             .domain(data.map(d => d.catagory))
             .range([0, width]);
         const yScale = d3.scaleLinear()
@@ -75,15 +73,15 @@ class Barchart extends Component {
             .style('text-anchor', 'middle')
             .text('Average Student Salary Increase');   
             
-        const yGridlines = d3.axisLeft()
-            .scale(yScale)
-            .ticks(5)
-            .tickSize(-width,0,0)
-            .tickFormat('')
+        // const yGridlines = d3.axisLeft()
+        //     .scale(yScale)
+        //     .ticks(5)
+        //     .tickSize(-width,0,0)
+        //     .tickFormat('')
 
-        chart.append('g')
-            .call(yGridlines)
-            .classed('gridline', true);
+        // chart.append('g')
+        //     .call(yGridlines)
+        //     .classed('gridline', true);
     }
 
     drawChart() {
