@@ -6,22 +6,6 @@ import {withRouter} from 'react-router-dom'
  * access props without the higher order component `withRouter` as a wrapper.
  */
 
-const head = {
-    padding: "0px 20px 0px 20px",
-    color: "white",
-    backgroundColor: "inherit"
-}
-
-const content = {
-    padding: "0px 20px 0px 20px",
-    backgroundColor: "#4682B4",
-    color: "white"
-}
-
-const ul = {
-    listStyleType: "none"
-}
-
 const SidebarContent = (props) => {
     const [overall,setOverall] = useState(false)
     const [mulitpleClasses,setMultipleClasses] = useState(false)
@@ -67,56 +51,56 @@ const SidebarContent = (props) => {
 
     return (
         <>
-            <div style={head}>
+            <div className="head">
                 <h3><i>Choose your chart options:</i></h3>
                 <hr/>
             </div>
-            <div style={content}>
+            <div className="content">
                 <form onSubmit={e => submitHandler(e)}>
-                    <ul style={ul}>
-                        <li style={{marginBottom: "5px"}}> 
+                    <ul>
+                        <li> 
                             <input type="checkbox"
                                    checked={overall}
                                    onChange={toggleOverall}
                             />
                             <label htmlFor="overall">Overall</label>
                         </li>
-                        <li style={{marginBottom: "5px"}}>
+                        <li>
                             <input type="checkbox"
                                    checked={mulitpleClasses}
                                    onChange={toggleMultiClasses}
                             />
                             <label htmlFor="multi-c">Multiple Classes</label>
                         </li>
-                        <li style={{marginBottom: "5px"}}>
+                        <li>
                             <input type="checkbox"
                                    checked={median}
                                    onChange={toggleMedian}
                             />
                             <label htmlFor="median">Median</label>
                         </li>
-                        <li style={{marginBottom: "5px"}}>
+                        <li>
                             <input type="checkbox"
                                    checked={unEmployed}
                                    onChange={toggleUnemployed}
                             />
                             <label htmlFor="unempl">Unemployed</label>
                         </li>
-                        <li style={{marginBottom: "5px"}}>
+                        <li>
                             <input type="checkbox"
                                    checked={women}
                                    onChange={toggleWomen}
                             />
                             <label htmlFor="women">Women</label>
                         </li>
-                        <li style={{marginBottom: "5px"}}>
+                        <li>
                             <input type="checkbox"
                                    checked={poc}
                                    onChange={togglePOC}
                             />
                             <label htmlFor="poc">POC</label>
                         </li>
-                        <li style={{marginBottom: "5px"}}>
+                        <li>
                             <input type="checkbox"
                                    checked={singleClass}
                                    onChange={toggleSingleClass}
@@ -125,7 +109,7 @@ const SidebarContent = (props) => {
                         </li>
                     </ul>
                     <hr/>
-                    <button type="submit" value="submit">Submit</button>
+                    <button type="submit" value="submit">Generate Chart</button>
                 </form>
             </div>
         </>
