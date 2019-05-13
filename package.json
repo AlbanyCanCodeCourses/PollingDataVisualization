@@ -4,9 +4,13 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "d3": "^5.9.2",
+    "d3-request": "^1.0.6",
+    "materialize-css": "^1.0.0-rc.2",
     "react": "^16.8.6",
     "react-d3-components": "^0.9.1",
     "react-dom": "^16.8.6",
+    "react-faux-dom": "^4.5.0",
     "react-redux": "^7.0.2",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",

@@ -48,6 +48,38 @@ li {
   color: #61dafb;
 }
 
+
+#chart {
+  background-color: #F5F2EB;
+  border: 1px solid #CCC;
+}
+
+
+.bar {
+  shape-rendering: crispEdges;
+}
+
+
+.bar-label{
+  fill: #000;
+  text-anchor: middle;
+  font-size: 18px;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+
+.gridline path,
+.gridline line{
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
