@@ -19,6 +19,26 @@
   color: white;
 }
 
+.head {
+  padding: 0px 20px 0px 20px;
+  color: white;
+  background-color: inherit;
+}
+
+.content {
+  padding: 0px 20px 0px 20px;
+  background-color: #4682B4;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
 .sp {
   fill: #61dafb;
   fill-opacity: 0.225;
