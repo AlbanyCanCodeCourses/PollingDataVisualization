@@ -1,8 +1,8 @@
 import React from 'react';
 import {BarChart, ScatterPlot, LineChart} from 'react-d3-components'
 import data from './assets/MOCK_DATA_150.json'
-import './App.css';
-
+import './App.css'
+import MenuContaine from './Sidebar/stories/menu'
 /**
  * This file is temporary! It will be modified after routing and logic are set - Nikita
  */
@@ -68,7 +68,13 @@ function App() {
 
   console.log(dX)
   return (
+    
     <div >
+      <MenuContaine></MenuContaine>
+      <div>
+      
+        
+      </div>
       <BarChart 
         data={dZ} 
         width={800}
