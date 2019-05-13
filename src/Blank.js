@@ -1,13 +1,13 @@
-import React, {useState} from "react";
+/*import React, {useState} from "react";
 import Sidebar from "react-sidebar";
-import SidebarContent from './SidebarContent'
+import SidebarContent from './SidebarContent';*/
  
-const Blank = (props) => {
+/*const Blank = (props) => {
 
   const [sidebarOpen,onSetSidebarOpen] = useState(true)
 
   return (
-    <Sidebar
+   /* <Sidebar
       sidebar={<SidebarContent props={props}/>}
       open={sidebarOpen}
       onSetOpen={onSetSidebarOpen}
@@ -17,7 +17,7 @@ const Blank = (props) => {
         Open sidebar
       </button>
     </Sidebar>
-  )
-}
+  
 
-export default Blank;
+
+export default Blank;*/
