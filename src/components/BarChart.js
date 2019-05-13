@@ -28,8 +28,14 @@ const style = {
 
 function App() {
 
-const tooltip = react-faux-dom.createElement('div')
-console.log(tooltip)
+const tooltipScatter = (x, y) => {
+  return (
+    <div>
+      <div>{x}</div>
+      <div>{y}</div>
+    </div>
+  )
+}
 
 
   let d9 = data.map(s => {
@@ -106,7 +112,7 @@ console.log(tooltip)
                 width={980}
                 height={600}
                 style={style}
-                // tooltipHtml={tooltipScatter}
+                tooltipHtml={tooltipScatter}
                 margin={{top: 10, bottom: 50, left: 60, right: 10}}/>
         <ToolTip />
         </div>

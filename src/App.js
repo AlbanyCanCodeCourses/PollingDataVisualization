@@ -6,11 +6,7 @@ import {
 } from "react-d3-components";
 import data from "./assets/MOCK_DATA_150.json";
 import "./App.css";
-// import ToolTip from './components/ToolTip/tooltip'
 
-/**
- * This file is temporary! It will be modified after routing and logic are set - Nikita
- */
 
 const style = {
   fill: "#F48921",
@@ -107,7 +103,6 @@ function App() {
           margin={{ top: 10, bottom: 50, left: 60, right: 10 }}
           
       
-        <ToolTip/>
         </ScatterPlot>
       </div>
 
