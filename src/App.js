@@ -13,7 +13,7 @@ import "./App.css";
  */
 
 const style = {
-  fill: "#61dafb",
+  fill: "#F48921",
   fillOpacity: "0.125"
 };
 

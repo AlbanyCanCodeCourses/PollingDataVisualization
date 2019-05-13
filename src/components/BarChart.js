@@ -5,6 +5,8 @@ import './App.css';
 import ToolTip from './ToolTip/tooltip'
 // import SideNav from './SideNav/SideNav'
 import Barchart from './Barchart/barchart'
+import { Element, createElement } from '../../node_modules/react-faux-dom';
+
 import data from '../assets/MOCK_DATA_150.json'
 
 // var dat0 = [
@@ -25,6 +27,11 @@ const style = {
 
 
 function App() {
+
+const tooltip = react-faux-dom.createElement('div')
+console.log(tooltip)
+
+
   let d9 = data.map(s => {
     return {
       x: parseFloat(s.previous_salary.slice(1)),
