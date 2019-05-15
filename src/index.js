@@ -1,14 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Container from './components/BarChart';
+import App from './components/App/App';
 import * as serviceWorker from "./serviceWorker";
 
 
-ReactDOM.render(
-  (<div>
-    <Container />
-  </div>),
+ReactDOM.render(<App/>,
   document.getElementById("root")
 );
 
