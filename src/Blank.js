@@ -1,23 +1,14 @@
-/*import React, {useState} from "react";
-import Sidebar from "react-sidebar";
-import SidebarContent from './SidebarContent';*/
- 
-/*const Blank = (props) => {
+import React from "react";
+import MenuContainer from "./Sidebar/stories/menu";
 
-  const [sidebarOpen,onSetSidebarOpen] = useState(true)
+ 
+const Blank = (props) => {
+
+
 
   return (
-   /* <Sidebar
-      sidebar={<SidebarContent props={props}/>}
-      open={sidebarOpen}
-      onSetOpen={onSetSidebarOpen}
-      styles={{ sidebar: { background: "#4682B4" } }}
-    >
-      <button onClick={() => onSetSidebarOpen(true)}>
-        Open sidebar
-      </button>
-    </Sidebar>
-  
+    <MenuContainer></MenuContainer>
+  )
+}
 
-
-export default Blank;*/
+export default Blank;

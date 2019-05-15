@@ -83,7 +83,44 @@ const Charts = (props) => {
                     height={600}
                     margin={{top: 10, bottom: 50, left: 60, right: 5}}/>
         </div>
-      )
+ function toggleDataPoints(colorClass) {
+  
+          .selectAll(`circle.${colorClass}`)
+          .data(data)
+          .classed('hidden', function() {  // toggle "hidden" class
+              return !d3.select(this).classed('hidden');
+          });
 }
+
+// color legend
+
+const colorLegend = d3.legendColor()
+      .scale(colorScale)
+      .shape('circle')
+      .shapeRadius(7)
+      .on('cellclick', function(d) {
+          toggleDataPoints(d);
+          const legendCell = d3.select(this);
+          legendCell.classed('hidden', !legendCell.classed('hidden'));  // toggle opacity of legend item
+      });
+
+// add circles representing the data
+
+g
+      .selectAll('circle')
+      .data(data)
+      .enter()
+      .append('circle')
+      .attr('class', d => `data-point ${colorClass(d)}`)
+      .attr('cx', d => xScale(xValue(d)))
+      .attr('cy', d => yScale(yValue(d)))
+      .attr('r', 10)
+      .style('fill', d => colorScale(colorClass(d)));
+
+// add color legend
+
+colorLegendG.call(colorLegend);
+});
+
 
 export default Charts
