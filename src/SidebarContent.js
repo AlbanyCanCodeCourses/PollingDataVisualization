@@ -11,13 +11,12 @@ const SidebarContent = (props) => {
     const [mulitpleClasses,setMultipleClasses] = useState(false)
     const [singleClass,setSingleClass] = useState(false)
     const [median,setMedian] = useState(false)
-    const [unEmployed,setUnemployed] = useState(false)
     const [women,setWomen] = useState(false)
     const [poc,setPOC] = useState(false)
 
     const submitHandler = e => {
         e.preventDefault()
-        const data = {overall,mulitpleClasses,singleClass,median,unEmployed,women,poc}
+        const data = {overall,mulitpleClasses,singleClass,median,women,poc}
         props.history.push({pathname: '/charts', state: data})
     }
 
@@ -31,10 +30,6 @@ const SidebarContent = (props) => {
 
     const toggleMedian = () => {
         setMedian(!median)
-    }
-
-    const toggleUnemployed = () => {
-        setUnemployed(!unEmployed)
     }
 
     const toggleWomen = () => {
@@ -78,13 +73,6 @@ const SidebarContent = (props) => {
                                    onChange={toggleMedian}
                             />
                             <label htmlFor="median">Median</label>
-                        </li>
-                        <li>
-                            <input type="checkbox"
-                                   checked={unEmployed}
-                                   onChange={toggleUnemployed}
-                            />
-                            <label htmlFor="unempl">Unemployed</label>
                         </li>
                         <li>
                             <input type="checkbox"
