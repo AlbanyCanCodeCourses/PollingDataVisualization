@@ -1,6 +1,5 @@
 import React from 'react';
 import {BarChart, ScatterPlot, LineChart, Tooltip} from 'react-d3-components'
-// import data from '../assets/MOCK_DATA_150.json'
 import './App.css';
 import ToolTip from './ToolTip/tooltip'
 // import SideNav from './SideNav/SideNav'

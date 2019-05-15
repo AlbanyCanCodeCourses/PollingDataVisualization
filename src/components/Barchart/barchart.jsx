@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Element } from 'react-faux-dom';
 import * as d3 from '../../../node_modules/d3';
-// import '../../App.css';
 import data from '../../assets/data.js';
 
-class Barchart extends Component {
+class BarChart extends Component {
 
     plot(chart, width, height) {
         const xScale = d3.scaleBand()
@@ -118,4 +117,4 @@ class Barchart extends Component {
     }
 }
 
-export default Barchart;
+export default BarChart;

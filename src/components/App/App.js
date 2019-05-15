@@ -1,32 +1,20 @@
 import React from "react";
-import {
-  BarChart,
-  ScatterPlot,
-  LineChart
-} from "react-d3-components";
-import data from "./assets/MOCK_DATA_150.json";
+import { ScatterPlot } from "react-d3-components";
+import data from "../../assets/MOCK_DATA_150.json";
 import "./App.css";
-
+import BarChart from "../Barchart/BarChart";
 
 const style = {
   fill: "#F48921",
   fillOpacity: "0.125"
 };
 
-
-
 function App() {
-
-
-  let ToolTip = (data) => {
-    return data.map((item, index) =>{
-      return (
-        <div key={index}>{item.first_name}</div>
-      )
-    })
-  
-  }
-
+  let ToolTip = data => {
+    return data.map((item, index) => {
+      return <div key={index}>{item.first_name}</div>;
+    });
+  };
 
   let d9 = data.map(s => {
     return {
@@ -86,33 +74,22 @@ function App() {
   console.log(dX);
   return (
     <div>
-      {/* <BarChart
+      <BarChart
         data={dZ}
         width={800}
         height={600}
         margin={{ top: 10, bottom: 50, left: 0, right: 10 }}
-      /> */}
-      <hr />
-      <div className="sp">
-        <ScatterPlot>
+      />
 
+      <div className="sp">
+        <ScatterPlot
           data={dX}
           width={980}
           height={600}
           style={style}
           margin={{ top: 10, bottom: 50, left: 60, right: 10 }}
-          
-      
-        </ScatterPlot>
+        />
       </div>
-
-      <hr />
-      <LineChart
-        data={dP}
-        width={1200}
-        height={600}
-        margin={{ top: 10, bottom: 50, left: 60, right: 5 }}
-      />
     </div>
   );
 }
