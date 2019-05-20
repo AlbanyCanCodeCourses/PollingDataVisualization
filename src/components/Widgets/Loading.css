@@ -1,0 +1,8 @@
+.pageloader {
+  width: 100%;
+}
+
+.pageloader img {
+  display: block;
+  margin: 80px auto;
+}
