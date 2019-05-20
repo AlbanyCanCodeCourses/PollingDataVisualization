@@ -1,13 +1,32 @@
 .App {
   text-align: center;
 }
+
+.app-container {
+  display: flex;
+}
+
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.barchart-container {
+  flex: 1;
+}
+
 .wrapper {
-    position: relative; /* necessary to push footer to bottom */
-    height: auto; /* necessary to push footer to bottom */
-    min-height: 100%; /* fills the space when content is less than 100% height of viewport */
-    width: 100%;
-    margin: 0;
-    padding-bottom: 80px; /* creates a space for footer to overlap .wrapper. MUST match footer properties height & margin-top (Footer.css) */
+  position: relative; /* necessary to push footer to bottom */
+  height: auto; /* necessary to push footer to bottom */
+  min-height: 100%; /* fills the space when content is less than 100% height of viewport */
+  width: 100%;
+  margin: 0;
+  padding-bottom: 80px; /* creates a space for footer to overlap .wrapper. MUST match footer properties height & margin-top (Footer.css) */
 }
 
 @media (min-width: 992px) {
