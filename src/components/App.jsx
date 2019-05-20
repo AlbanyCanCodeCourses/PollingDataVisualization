@@ -5,7 +5,7 @@ import "./App.css";
 import NavBarContainer from "./NavBar/NavBarContainer";
 import Footer from "./Footer/Footer";
 import LoginContainer from "./Login/LoginContainer";
-import Barchart from "./BarChart/Barchart.jsx";
+import Barchart from "./Barchart/Barchart.jsx";
 
 function App() {
   return (
