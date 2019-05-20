@@ -4,14 +4,23 @@
 footer {
   position: absolute;
   bottom: 0;
+<<<<<<< HEAD
   margin-top: -80px; /* Overlaps the .wrapper padding-bottom by amount entered - MUST be fixed amount. Need to adjust with media queries to ensure responsiveness. */
   height: 80px; /* MUST match margin-top & .wrapper padding-bottom (App.css). */
+=======
+  margin-top: -80px;  /* Overlaps the .wrapper padding-bottom by amount entered - MUST be fixed amount. Need to adjust with media queries to ensure responsiveness. */
+  height: 80px;  /* MUST match margin-top & .wrapper padding-bottom (App.css). */
+>>>>>>> 4ccd887b18ef830677176471973a2e99b9d8163d
   width: 100%;
   background: #000;
   text-align: center;
 }
+<<<<<<< HEAD
 footer p,
 footer a {
+=======
+footer p, footer a {
+>>>>>>> 4ccd887b18ef830677176471973a2e99b9d8163d
   color: #fff;
   font-family: "Roboto Condensed", "Roboto", sans-serif;
   font-size: 12px;
@@ -49,16 +58,27 @@ footer ul {
 }
 @media (min-width: 992px) {
   footer {
+<<<<<<< HEAD
     position: absolute; /* This and following line position footer at bottom of page. */
     bottom: 0;
     margin-top: -64px; /* Overlaps the .wrapper padding-bottom by amount entered - MUST be fixed amount. */
     height: 64px; /* MUST match margin-top & .wrapper padding-bottom (App.css). */
+=======
+    position: absolute;  /* This and following line position footer at bottom of page. */
+    bottom: 0;
+    margin-top: -64px;  /* Overlaps the .wrapper padding-bottom by amount entered - MUST be fixed amount. */
+    height: 64px;  /* MUST match margin-top & .wrapper padding-bottom (App.css). */
+>>>>>>> 4ccd887b18ef830677176471973a2e99b9d8163d
     width: 100%;
     background: #000;
     text-align: center;
   }
+<<<<<<< HEAD
   footer p,
   footer a {
+=======
+  footer p, footer a {
+>>>>>>> 4ccd887b18ef830677176471973a2e99b9d8163d
     font-size: 14px;
   }
   footer ul {
@@ -68,4 +88,8 @@ footer ul {
   footer p {
     float: left;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4ccd887b18ef830677176471973a2e99b9d8163d

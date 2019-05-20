@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+<<<<<<< HEAD
     "bootstrap": "^4.3.1",
     "d3": "^5.9.2",
     "history": "^4.9.0",
@@ -24,6 +25,21 @@
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.3.0",
     "slick-carousel": "^1.8.1"
+=======
+    "d3": "^5.9.2",
+    "history": "^4.7.2",
+    "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.6.3",
+    "react-faux-dom": "^4.5.0",
+    "react-redux": "^6.0.0",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-thunk": "^2.3.0"
+>>>>>>> 4ccd887b18ef830677176471973a2e99b9d8163d
   },
   "scripts": {
     "start": "react-scripts start",
