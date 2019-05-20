@@ -1,52 +1,13 @@
 .App {
   text-align: center;
 }
-<<<<<<< HEAD
-
-#poll-content {
-    background: white;
-    padding: 20px;
-    /* width: 800px;
-    height: 400px; */
-    border-radius: 20px;
-    clear: both;
-}
-
-main {
-    display: flex;
-}
-
-.poll-wrapper {
-    margin: 50px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.poll-wrapper div {
-    float: left;
-}
-
-.tab {
-    padding: 5px 5px 30px 5px;
-    margin: 0 10px 0 0;
-    background-color: white;
-    float: left;
-    position: relative;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    left: 0px;
-    transform: translate(0,25px);
-    z-index: -1;
-    font-size: 2em;
-    color: #8ec857;
-=======
 .wrapper {
-    position: relative; /* necessary to push footer to bottom */
-    height: auto; /* necessary to push footer to bottom */
-    min-height: 100%; /* fills the space when content is less than 100% height of viewport */
-    width: 100%;
-    margin: 0;
-    padding-bottom: 80px; /* creates a space for footer to overlap .wrapper. MUST match footer properties height & margin-top (Footer.css) */
+  position: relative; /* necessary to push footer to bottom */
+  height: auto; /* necessary to push footer to bottom */
+  min-height: 100%; /* fills the space when content is less than 100% height of viewport */
+  width: 100%;
+  margin: 0;
+  padding-bottom: 80px; /* creates a space for footer to overlap .wrapper. MUST match footer properties height & margin-top (Footer.css) */
 }
 
 @media (min-width: 992px) {
@@ -294,5 +255,4 @@ main {
 }
 .btn-link:hover {
   color: #00b5e0;
->>>>>>> upstream/master
 }

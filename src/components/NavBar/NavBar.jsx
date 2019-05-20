@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./NavBar.css";
-import accLogo from "../../assets/albany-can-code-logo-white.png";
-
-function NavBar() {
-    return (
-        <nav>
-            <img alt="AlbanyCanCode Logo" src={accLogo}/>
-            <span>DATA PORTAL</span>
-            <div id="menu">Menu</div>
-        </nav>
-    )
-}
-
-export default NavBar;
-=======
 import React, { Component } from "react";
 import { Navbar, Nav, NavItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
@@ -75,4 +58,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
->>>>>>> upstream/master
