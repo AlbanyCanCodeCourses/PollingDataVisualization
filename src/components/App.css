@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+<<<<<<< HEAD
 
 #poll-content {
     background: white;
@@ -38,4 +39,260 @@ main {
     z-index: -1;
     font-size: 2em;
     color: #8ec857;
+=======
+.wrapper {
+    position: relative; /* necessary to push footer to bottom */
+    height: auto; /* necessary to push footer to bottom */
+    min-height: 100%; /* fills the space when content is less than 100% height of viewport */
+    width: 100%;
+    margin: 0;
+    padding-bottom: 80px; /* creates a space for footer to overlap .wrapper. MUST match footer properties height & margin-top (Footer.css) */
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    padding-bottom: 64px; /* creates a space for footer to overlap .wrapper */
+  }
+}
+
+/*****************************************/
+/****** COLORS ***************************/
+/*****************************************/
+.acc-primary {
+  color: #00b5e0;
+}
+.acc-primary-bg {
+  background: #00b5e0;
+}
+.acc-secondary {
+  color: #8ec957;
+}
+.acc-secondary-bg {
+  background: #8ec957;
+}
+.acc-admin {
+  color: #eeb50e;
+}
+.acc-admin-bg {
+  background: #eeb50e;
+}
+
+/*****************************************/
+/****** BUTTONS **************************/
+/*****************************************/
+
+/* Rectangular Buttons */
+.acc-btn {
+  padding: 8px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1 !important;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.acc-btn-primary {
+  color: #fff;
+  border: 1px solid #00b5e0;
+  background: #00b5e0;
+}
+.acc-btn-primary:hover {
+  color: #00b5e0;
+  border: 1px solid #00b5e0;
+  background: transparent;
+}
+.acc-btn-secondary {
+  color: #fff;
+  border: 1px solid #8ec957;
+  background: #8ec957;
+}
+.acc-btn-secondary:hover {
+  color: #8ec957;
+  border: 1px solid #8ec957;
+  background: transparent;
+}
+/* Oval Buttons */
+.grad-btn {
+  padding: 8px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1 !important;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+/* Primary */
+.grad-btn-primary {
+  color: #00b5e0;
+  border: 1px solid #00b5e0;
+  background: transparent;
+}
+.grad-btn-primary:hover {
+  color: #fff;
+  border: 1px solid #00b5e0;
+  background: #00b5e0;
+}
+.grad-btn-primary:focus {
+  color: #00b5e0;
+  border: 1px solid #00b5e0;
+  background: transparent;
+}
+/* Secondary */
+.grad-btn-secondary {
+  color: #8ec957;
+  border: 1px solid #8ec957;
+  background: transparent;
+}
+.grad-btn-secondary:hover {
+  color: #fff;
+  border: 1px solid #8ec957;
+  background: #8ec957;
+}
+.grad-btn-secondary:focus {
+  color: #8ec957;
+  border: 1px solid #8ec957;
+  background: transparent;
+}
+/* Admin */
+.grad-btn-admin {
+  color: #eeb50e;
+  border: 1px solid #eeb50e;
+  background: transparent;
+}
+.grad-btn-admin:hover {
+  color: #fff;
+  border: 1px solid #eeb50e;
+  background: #eeb50e;
+}
+/* Admin Submit */
+.grad-btn-admin-submit {
+  color: #fff;
+  border: 1px solid #eeb50e;
+  background: #eeb50e;
+  margin-top: 5px;
+}
+.grad-btn-admin-submit:hover {
+  color: #eeb50e;
+  border: 1px solid #eeb50e;
+  background: transparent;
+}
+/* Admin isActive */
+.grad-btn-admin-active {
+  color: #eeb50e;
+  border: 1px solid #eeb50e;
+  background: #fff;
+  width: 90px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.grad-btn-admin-active:hover {
+  color: #fff;
+  border: 1px solid #adadad;
+  background: #adadad;
+}
+.grad-btn-admin-active:focus {
+  color: #eeb50e;
+  border: 1px solid #eeb50e;
+  background: #fff;
+  outline: 5px auto #eeb50e;
+  outline-offset: -2px;
+}
+.grad-btn-admin-inactive {
+  color: #adadad;
+  border: 1px solid #adadad;
+  background: #fff;
+  width: 83px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.grad-btn-admin-inactive:hover {
+  color: #fff;
+  border: 1px solid #eeb50e;
+  background: #eeb50e;
+}
+.grad-btn-admin-inactive:focus {
+  color: #adadad;
+  border: 1px solid #adadad;
+  background: #fff;
+  outline: 5px auto #adadad;
+  outline-offset: -2px;
+}
+.grad-btn-admin-active:hover span,
+.grad-btn-admin-inactive:hover span {
+  display: none;
+}
+.grad-btn-admin-active:hover:after {
+  content: "Deactivate";
+}
+.grad-btn-admin-inactive:hover:after {
+  content: "Activate";
+}
+
+/* Add */
+.grad-btn.add-btn {
+  font-size: 22px;
+  margin: 3px 12px 0;
+  padding: 1px 6px;
+}
+
+@media (min-width: 480px) {
+  .grad-btn.add-btn {
+    font-size: 26px;
+    margin-left: 12px;
+    margin-top: 3px;
+    padding: 1px 7px;
+  }
+}
+
+/*****************************************/
+/****** SEARCH RESULTS INFO **************/
+/*****************************************/
+.links {
+  margin-right: 10px;
+  padding: 8px 8px;
+}
+.links i {
+  color: #00b5e0;
+}
+.links:hover i {
+  color: #fff;
+}
+.skills {
+  color: #00b5e0;
+  font-size: 600;
+  word-spacing: 2px;
+}
+
+/*****************************************/
+/****** MISC BOOTSTRAP OVERRIDES *********/
+/*****************************************/
+.btn-primary {
+  background: #00b5e0;
+}
+.btn-link {
+  color: #00b5e0;
+  font-weight: 500;
+  text-align: left;
+  padding: 0;
+}
+.btn-link:hover {
+  color: #00b5e0;
+>>>>>>> upstream/master
 }

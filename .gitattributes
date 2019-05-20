@@ -39,18 +39,16 @@
 *.sql text
 *.sh text
 *.bat text
+*.sql text
 
 # templates
-*.ejs text
-*.hbt text
-*.jade text
 *.jsx text
-*.haml text
-*.hbs text
-*.dot text
-*.tmpl text
-*.phtml text
-*.latte text
+
+# package management
+.composer.json text
+.composer-lock.json text
+.package.json text
+.package-lock.json text
 
 # server config
 .htaccess text
@@ -61,28 +59,28 @@
 .gitconfig text
 
 # code analysis config
-.eslintrc
-.eslintrc.json
+.eslintrc.json text
 
 # misc config
+*.conf*
 *.yaml text
 *.yml text
+.babelrc text
+.browserlistrc text
+.eslintrc text
+.eslintrc.json text
+.ebignore text
 .editorconfig text
 
 # build config
-.babelrc
-
-# Heroku
-Procfile text
-.slugignore text
+*.npmignore text
+*.bowerrc text
+webpack.config.js text
 
 # Documentation
 *.md text
 LICENSE text
 AUTHORS text
-
-# Misc
-*.csv text
 
 
 #
@@ -110,12 +108,3 @@ AUTHORS text
 *.woff2 binary
 *.pyc binary
 *.pdf binary
-
-# Added binary files:
-*.sketch binary
-*.psd binary
-*.ai binary
-*.t2d binary
-*.docx binary
-*.xlsx binary
-/**/design/* binary
