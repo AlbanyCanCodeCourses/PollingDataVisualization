@@ -1,6 +1,25 @@
 .App {
   text-align: center;
 }
+
+.app-container {
+  display: flex;
+}
+
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.barchart-container {
+  flex: 1;
+}
+
 .wrapper {
   position: relative; /* necessary to push footer to bottom */
   height: auto; /* necessary to push footer to bottom */
