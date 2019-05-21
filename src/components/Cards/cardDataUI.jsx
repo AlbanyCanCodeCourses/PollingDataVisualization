@@ -1,9 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import "./Cards.css";
+import './Cards.css';
 
 const Card = props => {
-  console.log(props);
   return (
     <div className="card text-center shadow">
       <div className="overflow" />
