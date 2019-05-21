@@ -5,7 +5,8 @@ import data from "./data.js";
 
 class Barchart extends Component {
   state = {
-    data: null
+    data: null, 
+    legend: null
   };
 
   componentDidMount() {
@@ -16,17 +17,9 @@ class Barchart extends Component {
     });
   }
 
-  plot(chart, width, height) {
-    var svg = d3.select("svg"),
-      // margin = { top: 20, right: 20, bottom: 30, left: 40 },
-      // width = +svg.attr("width") - margin.left - margin.right,
-      // height = +svg.attr("height") - margin.top - margin.bottom,
-      g = svg.append("g");
-    // .attr(
-    //   "transform",
-    //   "translate(" + margin.left + "," + margin.top + ")"
-    // );
-    console.log(g);
+  plot(chart, width, height, elLegend) {
+
+
     const xScale = d3
       .scaleBand()
       .domain(this.state.data.map(d => d.catagory))
@@ -49,6 +42,11 @@ class Barchart extends Component {
       .attr("height", d => height - yScale(d.value))
       .attr("width", d => xScale.bandwidth())
       .style("fill", (d, i) => colorScale(i));
+
+    // elLegend
+    //   .append("g")
+    //   .data(this.state.data)
+    //   .enter();
 
     chart
       .selectAll(".bar-label")
@@ -102,36 +100,6 @@ class Barchart extends Component {
       .style("text-anchor", "middle")
       .text("Average Student Salary Increase");
 
-    var legend = chart
-      .append("g")
-      .attr("font-family", "Montserrat")
-      .attr("font-size", 10)
-      .attr("text-anchor", "end")
-      .selectAll("g")
-      // .data(keys.slice().reverse())
-      .enter()
-      .append("g")
-      .attr("transform", function(d, i) {
-        return "translate(0," + i * 20 + ")";
-      });
-
-      legend.append("rect")
-      .attr("x", width - 17)
-      .attr("width", 15)
-      .attr("height", 15)
-      // .attr("fill", z)
-      // .attr("stroke", z)
-      .attr("stroke-width",2)
-      // .on("click",function(d) { update(d) });
-
-      legend.append("text")
-      .attr("x", width - 24)
-      .attr("y", 9.5)
-      .attr("dy", "0.32em")
-      .text(function(d) { return d; });
-
-      //////////////////////
-
     // const yGridlines = d3.axisLeft()
     //     .scale(yScale)
     //     .ticks(5)
@@ -141,6 +109,38 @@ class Barchart extends Component {
     // chart.append('g')
     //     .call(yGridlines)
     //     .classed('gridline', true);
+  }
+
+  drawLegend() {
+    const height = 300;
+    const width = 300;
+
+    const elLegend = new Element("div");
+
+    const svg = d3
+      .select(elLegend)
+      .append("svg")
+      .attr("id", "legend")
+      .attr("width", width)
+      .attr("height", height);
+
+    const margin = {
+      top: 60,
+      bottom: 0,
+      left: 60,
+      right: 100
+    };
+
+    const legend = svg
+      .append("g")
+      .classed("display", true)
+      .attr("transform", `translate(${margin.right},${margin.top})`);
+
+    const legendWidth = width - margin.left - margin.right;
+    const legendHeight = height - margin.top - margin.bottom;
+    this.plot(legend, legendWidth, legendHeight);
+
+    return elLegend.toReact();
   }
 
   drawChart() {
@@ -176,9 +176,11 @@ class Barchart extends Component {
 
   render() {
     return (
-      <div className="Barchart">
-        {this.state.data && this.drawChart()}
-        <svg />
+      <div>
+        <div className="Barchart">
+          {this.state.data && this.drawChart()}
+        </div>
+        <div className="legend">{this.state.data && this.drawLegend()}</div>
       </div>
     );
   }
