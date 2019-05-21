@@ -2,15 +2,10 @@
   clear: both;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  margin-top: -80px;  /* Overlaps the .wrapper padding-bottom by amount entered - MUST be fixed amount. Need to adjust with media queries to ensure responsiveness. */
-  height: 80px;  /* MUST match margin-top & .wrapper padding-bottom (App.css). */
-  width: 100%;
-  background: #000;
-  text-align: center;
+  margin-top: auto;
 }
-footer p, footer a {
+footer p,
+footer a {
   color: #fff;
   font-family: "Roboto Condensed", "Roboto", sans-serif;
   font-size: 12px;
@@ -48,15 +43,13 @@ footer ul {
 }
 @media (min-width: 992px) {
   footer {
-    position: absolute;  /* This and following line position footer at bottom of page. */
-    bottom: 0;
-    margin-top: -64px;  /* Overlaps the .wrapper padding-bottom by amount entered - MUST be fixed amount. */
-    height: 64px;  /* MUST match margin-top & .wrapper padding-bottom (App.css). */
+    height: 64px; /* MUST match margin-top & .wrapper padding-bottom (App.css). */
     width: 100%;
     background: #000;
     text-align: center;
   }
-  footer p, footer a {
+  footer p,
+  footer a {
     font-size: 14px;
   }
   footer ul {

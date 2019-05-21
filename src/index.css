@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -22,7 +23,12 @@ p {
   color: #868686;
   line-height: 22px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Roboto Condensed;
   font-weight: 700;
 }
