@@ -125,7 +125,7 @@ class Barchart extends Component {
 
   render() {
     return (
-      <div className="barchart-container">
+      <div className="center-chart">
         {this.drawChart()}
         <Card />
       </div>
