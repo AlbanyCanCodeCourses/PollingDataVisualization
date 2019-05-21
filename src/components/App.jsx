@@ -6,7 +6,7 @@ import NavBarContainer from "./NavBar/NavBarContainer";
 import Footer from "./Footer/Footer";
 import LoginContainer from "./Login/LoginContainer";
 import Barchart from "./Barchart/Barchart";
-import Test from "./Test/Test"
+import Blank from "./Blank/Blank"
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Barchart
       } />
-        <Route path="/datavisualization" component={Test} />
+        <Route path="/datavisualization" component={Blank} />
         <Route exact path="/login" component={LoginContainer} />
         <Redirect to="/" />
       </Switch>

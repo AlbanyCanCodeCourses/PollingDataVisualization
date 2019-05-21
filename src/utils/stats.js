@@ -6,15 +6,16 @@ export function parseCurrency(currency) {
 
 export function sumSalaryChange(acc, obj, i) {
   count = i;
-  acc += parseCurrency(obj.salary_change);
+  acc += parseCurrency(obj.salarychange);
   return acc;
 }
 
-export function avg(obj) {
-  return Math.round(obj.reduce(sumSalaryChange, 0) / ++count);
+export function avg(arr) {
+  return Math.round(arr.reduce(sumSalaryChange, 0) / ++count);
 }
 
 export function calculateMedian(arr) {
+  arr.sort((a,b) => a - b)
   let half = Math.floor(arr.length / 2);
   return arr.length % 2
     ? Math.round(arr[half])
