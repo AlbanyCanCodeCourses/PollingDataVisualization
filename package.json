@@ -5,11 +5,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
     "d3": "^5.9.2",
     "history": "^4.7.2",
+    "jquery": "^3.4.1",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
+    "react-burger-menu": "^2.6.10",
     "react-dom": "^16.6.3",
     "react-faux-dom": "^4.5.0",
     "react-redux": "^6.0.0",
