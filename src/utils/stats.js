@@ -1,5 +1,5 @@
 export function parseCurrency(currency) {
-  return parseFloat(currency.replace(/[$,]/g, ''));
+  return parseFloat(currency.replace(/[$,]/g, ""));
 }
 
 export function sumSalaryChange(acc, obj, i) {
@@ -12,7 +12,7 @@ export function avg(arr) {
 }
 
 export function calculateMedian(arr) {
-  console.log(arr);
+  // console.log(arr);
   arr.sort((a, b) => a - b);
   let half = Math.floor(arr.length / 2);
   return arr.length % 2
