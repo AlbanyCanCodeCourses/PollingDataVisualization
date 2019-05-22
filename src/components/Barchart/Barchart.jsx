@@ -7,6 +7,7 @@ import * as stats from "../../utils/stats";
 import "./BarChart.css";
 import "./styles.css";
 import SideBar from "./Sidebar";
+import config from '../../config';
 
 class Barchart extends Component {
   state = {
@@ -110,7 +111,7 @@ class Barchart extends Component {
   getLiveData = async () => {
     await axios
       .get(
-        "http://graduateportal-dev.tw7ahpynm7.us-east-2.elasticbeanstalk.com/api/graduates/data-visualization"
+        `${config.apiUrl}api/graduates/data-visualization`
       )
       .then(resp => {
         console.log(this.updateData(resp.data.data));

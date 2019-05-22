@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import config from './config';
 
 class Cards extends React.Component {
   componentDidMount() {
@@ -8,7 +9,7 @@ class Cards extends React.Component {
 
   getItems() {
     fetch(
-      "http://graduateportal-dev.tw7ahpynm7.us-east-2.elasticbeanstalk.com/api/graduates/data-visualization"
+      `${config.apiUrl}api/graduates/data-visualization`
     )
       .then(results => results.json())
       .then(results => console.log(results));

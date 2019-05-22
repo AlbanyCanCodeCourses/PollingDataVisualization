@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import * as stats from '../../utils/stats'
 //import * as d3 from 'd3'; // Uncomment if you're doing the chart logic here or delete this
 import axios from 'axios';
+import config from '../../config';
 
 class Blank extends Component {
     state ={
@@ -10,7 +11,7 @@ class Blank extends Component {
     }
 
     getLiveData = async () => {
-        await axios.get('http://graduateportal-dev.tw7ahpynm7.us-east-2.elasticbeanstalk.com/api/graduates/data-visualization')
+        await axios.get(`${config.apiUrl}api/graduates/data-visualization`)
         .then(resp => {
             this.setState({liveData:[...resp.data.data]})
         })
